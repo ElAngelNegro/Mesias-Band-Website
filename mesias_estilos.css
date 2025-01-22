@@ -1,0 +1,264 @@
+html, body { 
+    background: url("assets/mesias_helpfest2.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: grid;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    padding-bottom: 0%;
+}
+
+main {
+    flex: 1;
+}
+
+.logo {
+    text-align: center;
+}
+
+.main_phase_Container {
+    text-align: center;
+    margin: 100px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.frase1 {
+    font-size: 300%;
+}
+
+.frase2 {
+    font-size: 300%;
+}
+
+.video_Container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.video_Logo {
+    clip-path: inset(0 round 50px); /* Bordes redondeados */
+    width: 500px;
+    height: 300px;
+}
+
+img { /* todas las imagenes del document html */
+    border-radius: 20px;
+}
+
+.image_Right { /* imagen de la derecha */
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 40px;
+    margin-block-end: 0;
+}
+
+.image_Left {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 1em;
+}
+
+.last_Image {
+    text-align: center;
+    padding: 50px;
+}
+
+.mesias_Old { /* caracteristicas de la imagen de la derecha */
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 0;
+    margin: 20px;
+}
+
+.mesias_Oxido {
+    width: 400px;
+    height: 290px;
+    padding: 0;
+}
+
+.mesias_Front {
+    width: 400px;
+    height: 290px;
+}
+
+h1 { /* todos los titulos de encabezado h1 */
+    font-size: 300%;
+    color: white; 
+    text-align: center;
+}
+
+h2 {
+    text-align: center; 
+    color: white;
+}
+
+h3 { /* todos los titulos encabezados h3 */
+    text-align: center; 
+    color: white;
+}
+
+p { /* todos los parrafos */
+    font-size: 20px; 
+    color: white;
+    padding: 0; 
+    margin-block-start: 0;
+}
+
+.inicios_Origen{
+
+margin: 40px;
+}
+
+.texto_Dos{
+    
+    margin: 40px;
+    margin-block-start: 0;
+}
+.historia_Oxido{
+
+    padding: 20px;
+
+}
+
+.iframe_Container { /* contenedor de los iframes */
+    display: inline-block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding-left: 100px;
+}
+
+iframe { /* iframes individuales */
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    width: 500px;  /* Ancho de cada iframe */
+    height: 300px; /* Altura de cada iframe */
+}
+
+ul { /* unordered list */
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+li { /* listado header */
+    display: flex;
+    padding-left: 50px;
+    text-align: center;
+    float: left;
+}
+
+li a {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    justify-content:center;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+    transition: transform 0.3s ease, text-shadow 0.5s, color 0.5s ease;
+}
+
+li a:hover {
+    transform: scale(1.5); 
+}
+
+footer {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+.list_Ancla { /* Listado de anclas de Redes Sociales */
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.bi { /* Anclas de Iconos de Redes Sociales */
+    background: #333;
+    border-radius: 50%;
+    color: white;
+    padding: 6px;
+    font-size: 18px;
+    text-shadow: none;
+}    
+
+.bi:hover {
+    transition: transform 0.3s ease;
+}
+
+.copyright { /* texto derechos de autor */
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos específicos para dispositivos medianos */
+    body {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    nav{
+
+        align-items: center;
+    }
+
+    
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Smaller font size for better readability */
+        padding: 10px; /* Reduced padding */
+    }
+
+    .logo {
+        width: 100%; /* Make logo responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .video_Logo {
+        width: 100%; /* Make video logo responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .iframe_Container {
+        flex-direction: column; /* Stack iframes vertically */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    iframe {
+        width: 100%; /* Make iframes responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    li {
+        padding-left: 10px; /* Adjust padding for smaller screens */
+    }
+}
