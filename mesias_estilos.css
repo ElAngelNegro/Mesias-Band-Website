@@ -35,6 +35,12 @@ nav{
     text-align: center;
     justify-content: center;
 }
+
+hr{
+    width: 50%; margin: 0 auto;
+    
+}
+
 .frase1 {
     font-size: 300%;
 }
